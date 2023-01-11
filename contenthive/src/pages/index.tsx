@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Navbar from "components/NavBar";
+import MainContent from "components/MainContent";
 
 import styles from "../styles/Home.module.css";
 
@@ -19,8 +20,8 @@ const Home = () => {
       <main className={styles.main}>
         <div>
           <Navbar />
-          {/* <MainContent />
-          <Footer /> */}
+          <MainContent />
+          {/* <Footer /> */}
         </div>
       </main>
     </>
