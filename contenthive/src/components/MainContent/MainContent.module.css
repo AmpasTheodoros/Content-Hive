@@ -1,21 +1,25 @@
 .section {
-  background-image: url("/honeycomb.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90vh;
   height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
 }
 
-.section h1 {
+.heroSection {
+  background-image: url("/honeycomb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90vh;
+}
+
+.heroSection h1 {
   color: black;
-  font-size: 90px;
+  font-size: 4vw;
+  font-weight: 800;
 }
 
-.section p {
+.heroSection p {
   color: #475153;
+  font-size: 0.9vw;
 }

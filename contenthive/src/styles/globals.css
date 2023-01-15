@@ -103,3 +103,12 @@ a {
     color-scheme: dark;
   }
 }
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .navlink {
+    @apply mr-3 text-base list-none text-black;
+  }
+}
