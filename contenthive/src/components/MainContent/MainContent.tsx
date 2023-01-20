@@ -8,6 +8,7 @@ import classes from "./MainContent.module.css";
 import Card from "./FirstSection/Card/Card";
 import CheckIcon from "./SecondSection/CheckIcon/CheckIcon";
 import Image from "next/image";
+import IconText from "./ThirdSection/IconText/IconText";
 
 const MainContent = () => {
   const options = {
@@ -57,7 +58,7 @@ const MainContent = () => {
 
       {/* SECTION 2 | HOW IT WORKS*/}
       <div className="p-40">
-        <h2 className="text-center text-gray text-sm">01.HOW IT WORKS</h2>
+        <h2 className="text-center text-orange text-sm">01. HOW IT WORKS</h2>
         <h2 className="pt-5 text-center text-black text-4xl">
           LET THE CUSTOMERS <a className="text-orange">STING</a> WITH YOUR
           WEBSITE
@@ -98,7 +99,7 @@ const MainContent = () => {
         </div>
 
         <div className="text-black flex justify-center flex-col">
-          <h2 className="text-left text-gray text-sm">02.HIVE MANAGEMENT</h2>
+          <h2 className="text-left text-orange text-sm">02. HIVE MANAGEMENT</h2>
           <h2 className="pt-5 text-left text-black text-5xl">
             Manage Your Hive Easily
           </h2>
@@ -142,6 +143,61 @@ const MainContent = () => {
           >
             BUZZ ON
           </Button>
+        </div>
+      </div>
+
+      {/* SECTION 4 | BENEFITS */}
+
+      <div className="grid grid-cols-2 gap-15 gap-x-10 bg-bg-light pt-20 pb-20 pl-80 pr-80">
+        <div className="text-black flex flex-col justify-start content-center">
+          <h2 className="text-left text-orange text-sm pb-5">03. BENEFITS</h2>
+          <h3 className="text-gray text-6xl">
+            All-in-one App for Your Website
+          </h3>
+        </div>
+        <div className="text-black flex items-center">
+          <p>
+            With Boost App, you can easily edit and manage your website,
+            regardless of the platform. Move blocks and elements, add new pages,
+            connect new widgets, run tests, and track results. The app is
+            available for Mac and has Android and iOS mobile versions. Boost
+            your website with the Boost App!
+          </p>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-3 gap-15 gap-x-10 bg-bg-light pt-5 pb-20 pl-80 pr-80">
+        <div className="text-black flex flex-col justify-start content-center">
+          <IconText
+            title="Multiple Layouts"
+            icon="/Layout.svg"
+            content="Change the look of your site easily with a variety of ready-made templates and beautiful layouts."
+          />
+          <IconText
+            title="Knowledge Base"
+            icon="/Knowledge.svg"
+            content="Refer to it whenever you are stuck. Also, you can connect Confluence and share the documentation with teammates."
+          />
+        </div>
+        <div className="text-black flex flex-col justify-start content-center">
+          <IconText
+            title="Safe Access"
+            icon="/SafeAccess.svg"
+            content="Don't worry about security: you are working on a local version of your site, it cannot be hacked or stolen."
+          />
+          <IconText
+            title="Lifetime Updates"
+            icon="/Access.svg"
+            content="Once you've create an account, you get access to all the updates, whatever device you work on."
+          />
+        </div>
+        <div className="text-black flex items-center col-start-3">
+          <Image
+            height={100}
+            width={300}
+            src={"/demo-image.png"}
+            alt={"demo-image"}
+          />
         </div>
       </div>
     </div>
