@@ -5,7 +5,38 @@ module.exports = {
     "src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        "4vw": "4vw",
+      },
+      height: {
+        "90vh": "90vh",
+      },
+      backgroundImage: {
+        "hero-pattern": "url('/honeycomb.png')",
+        polygon: "url('/polygon.jpg')",
+      },
+      backgroundSize: {
+        auto: "auto",
+        cover: "cover",
+        contain: "contain",
+        "50%": "50%",
+        "90vh": "90vh",
+      },
+      backgroundPosition: {
+        bottom: "bottom",
+        "bottom-4": "center bottom 1rem",
+        center: "center",
+        left: "left",
+        "left-bottom": "left bottom",
+        "left-top": "left top",
+        right: "right",
+        "right-bottom": "right bottom",
+        "right-top": "right top",
+        top: "top",
+        "bot-1": "left top 6rem",
+      },
+    },
     colors: {
       orange: "#F49A23",
       gray: "#2c2e38",
