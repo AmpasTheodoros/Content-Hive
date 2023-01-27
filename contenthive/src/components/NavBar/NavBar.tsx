@@ -2,8 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@mui/material";
+import BuzzButton from "components/BuzzButton";
 
-const Navbar = () => {
+const Navbar = (props: {
+  handleOpen: (e: React.MouseEvent<HTMLElement>) => void;
+}) => {
   return (
     <nav
       className={`fixed top-0 left-0 w-screen h-20 justify-between flex flex-row items-center bg-white z-10`}
@@ -24,23 +27,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navlink">
-            <Button
-              variant="contained"
-              href="/"
-              sx={{
-                color: "black",
-                backgroundColor: "#F49A23",
-                borderRadius: 30,
-                paddingLeft: 3,
-                paddingRight: 3,
-                "&:hover": {
-                  backgroundColor: "#475153",
-                  color: "white",
-                },
-              }}
-            >
-              BUZZ ON
-            </Button>
+            <BuzzButton
+              handleOpen={props.handleOpen}
+              color={"black-orange"}
+              hcolor={"orange-#475153"}
+              size={"120-40-16"}
+              pad={0}
+            />
           </li>
           <li>
             <Image

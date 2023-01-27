@@ -4,10 +4,13 @@ import { Button } from "@mui/material";
 
 import CheckIcon from "./CheckIcon";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import BuzzButton from "components/BuzzButton";
 
-const SecondSection = () => {
+const SecondSection = (props: {
+  handleOpen: (e: React.MouseEvent<HTMLElement>) => void;
+}) => {
   return (
-    <div className="grid grid-cols-2 gap-15 bg-bg-light pt-40 pb-20 pl-40 pr-40">
+    <div className="grid grid-cols-2 gap-15 bg-bg-light pt-32 pb-20 pl-40 pr-40">
       <div className="text-black flex justify-center content-center">
         <Image
           height={100}
@@ -41,27 +44,13 @@ const SecondSection = () => {
             <CheckIcon content="Simple Interface" />
           </div>
         </div>
-        <Button
-          variant="contained"
-          href="/"
-          sx={{
-            color: "black",
-            width: 200,
-            height: 60,
-            fontSize: 20,
-            backgroundColor: "#F49A23",
-            borderRadius: 6,
-            marginTop: 4,
-            paddingLeft: 3,
-            paddingRight: 3,
-            "&:hover": {
-              backgroundColor: "black",
-              color: "#F49A23",
-            },
-          }}
-        >
-          BUZZ ON
-        </Button>
+        <BuzzButton
+          handleOpen={props.handleOpen}
+          color={"black-orange"}
+          hcolor={"orange-#475153"}
+          size={"180-50-16"}
+          pad={3}
+        />
       </div>
     </div>
   );

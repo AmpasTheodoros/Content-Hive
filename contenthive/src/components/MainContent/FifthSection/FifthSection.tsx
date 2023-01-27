@@ -2,8 +2,11 @@ import React from "react";
 
 import { Button } from "@mui/material";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+import BuzzButton from "components/BuzzButton";
 
-const FifthSection = () => {
+const FifthSection = (props: {
+  handleOpen: (e: React.MouseEvent<HTMLElement>) => void;
+}) => {
   return (
     <div className=" flex content-center justify-center items-center ">
       <div className="bg-orange w-4/5 rounded-md mt-20 p-20">
@@ -15,27 +18,13 @@ const FifthSection = () => {
           Try all the features of our app for free. No credit card required.
         </p>
         <div className="flex justify-center">
-          <Button
-            variant="contained"
-            href="/"
-            sx={{
-              color: "#F49A23",
-              width: 180,
-              height: 50,
-              fontSize: 14,
-              backgroundColor: "white",
-              marginTop: 3,
-              paddingLeft: 2,
-              paddingRight: 2,
-              "&:hover": {
-                backgroundColor: "gray",
-                color: "white",
-              },
-            }}
-            className="flex align-middle items-center justify-center"
-          >
-            BUZZ ON
-          </Button>
+          <BuzzButton
+            handleOpen={props.handleOpen}
+            color={"orange-white"}
+            hcolor={"orange-gray"}
+            size={"180-50-14"}
+            pad={4}
+          />
           <Button
             variant="text"
             href="/"
@@ -45,9 +34,9 @@ const FifthSection = () => {
               width: 180,
               height: 50,
               fontSize: 14,
-              marginTop: 3,
-              paddingLeft: 2,
-              paddingRight: 2,
+              marginTop: 4,
+              paddingLeft: 3,
+              paddingRight: 3,
               "&:hover": {
                 color: "white",
                 textDecoration: "underline",

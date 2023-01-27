@@ -5,7 +5,7 @@ import Card from "./Card";
 const FirstSection = () => {
   return (
     <div className="w-screen mt-20">
-      <div className="p-40">
+      <div className="pt-40 pb-32">
         <h2 className="text-center text-orange text-sm">01. HOW IT WORKS</h2>
         <h2 className="pt-5 text-center text-black text-4xl">
           LET THE CUSTOMERS <a className="text-orange">STING</a> WITH YOUR

@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@mui/material";
+import BuzzButton from "components/BuzzButton";
 
-const SixthSection = () => {
+const SixthSection = (props: {
+  handleOpen: (e: React.MouseEvent<HTMLElement>) => void;
+}) => {
   return (
     <div className="grid grid-cols-4 gap-5 pt-40 pb-20 pl-20 pr-20">
       <div className="text-black flex justify-center col-start-2 content-center">
@@ -23,26 +26,13 @@ const SixthSection = () => {
           Android devices. <br />
           <br /> Its hard to imagine an easier way to manage your website!
         </p>
-        <Button
-          variant="contained"
-          href="/"
-          sx={{
-            color: "black",
-            width: 150,
-            height: 50,
-            fontSize: 15,
-            backgroundColor: "#F49A23",
-            marginTop: 4,
-            paddingLeft: 3,
-            paddingRight: 3,
-            "&:hover": {
-              backgroundColor: "black",
-              color: "#F49A23",
-            },
-          }}
-        >
-          BUZZ ON
-        </Button>
+        <BuzzButton
+          handleOpen={props.handleOpen}
+          color={"black-orange"}
+          hcolor={"orange-#475153"}
+          size={"150-50-16"}
+          pad={5}
+        />
       </div>
     </div>
   );

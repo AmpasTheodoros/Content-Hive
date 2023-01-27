@@ -36,6 +36,12 @@ module.exports = {
         top: "top",
         "bot-1": "left top 6rem",
       },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "100" },
+        },
+      },
     },
     colors: {
       orange: "#F49A23",

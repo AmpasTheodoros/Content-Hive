@@ -22,7 +22,7 @@ const MainContent = () => {
     justifyItems: "center",
   };
   const [open, setOpen] = React.useState(false);
-  const handleOpen = (e: any) => {
+  const handleOpen = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
     setOpen(true);
   };
@@ -41,7 +41,13 @@ const MainContent = () => {
             setOpen(false);
           }}
         />
-        <BuzzButton handleOpen={handleOpen} />
+        <BuzzButton
+          handleOpen={handleOpen}
+          color={"orange-black"}
+          hcolor={"orange-#475153"}
+          size={"200-60-20"}
+          pad={3}
+        />
 
         <Grid container spacing={2} sx={{ paddingTop: 1 }}>
           <Grid sx={options}>
@@ -59,7 +65,7 @@ const MainContent = () => {
       <FirstSection />
 
       {/* SECTION 2 | HIVE MANAGMENT  */}
-      <SecondSection />
+      <SecondSection handleOpen={handleOpen} />
 
       {/* SECTION 3 | BENEFITS */}
       <ThirdSection />
@@ -68,10 +74,10 @@ const MainContent = () => {
       <FourthSection />
 
       {/* SECTION 5 | MANAGE AND EDIT YOUR HIVES */}
-      <FifthSection />
+      <FifthSection handleOpen={handleOpen} />
 
       {/* SECTION 6 | MANAGE YOUR HIVE EASILY */}
-      <SixthSection />
+      <SixthSection handleOpen={handleOpen} />
 
       <Footer />
     </div>
