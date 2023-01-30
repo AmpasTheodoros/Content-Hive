@@ -9,21 +9,21 @@ const FifthSection = (props: {
 }) => {
   return (
     <div className=" flex content-center justify-center items-center ">
-      <div className="bg-orange w-4/5 rounded-md mt-20 p-20">
-        <h3 className="text-center text-white text-6xl">
+      <div className="bg-orange w-4/5 rounded-md mt-10 p-10 lg:p-20">
+        <h3 className="text-center text-white text-2xl sm:text-4xl lg:text-6xl">
           Manage and Edit Your Hives <br />
           in a Couple of Clicks
         </h3>
-        <p className="text-center text-white text-md mt-5 font-sans">
+        <p className="text-center text-white text-md sm:text-lg lg:text-xl mt-5 pb-5 font-sans">
           Try all the features of our app for free. No credit card required.
         </p>
-        <div className="flex justify-center">
+        <div className="flex max-sm:flex-col items-center justify-center">
           <BuzzButton
             handleOpen={props.handleOpen}
             color={"orange-white"}
             hcolor={"orange-gray"}
             size={"180-50-14"}
-            pad={4}
+            pad={0}
           />
           <Button
             variant="text"
@@ -34,7 +34,7 @@ const FifthSection = (props: {
               width: 180,
               height: 50,
               fontSize: 14,
-              marginTop: 4,
+              marginTop: 0,
               paddingLeft: 3,
               paddingRight: 3,
               "&:hover": {

@@ -10,7 +10,7 @@ const SecondSection = (props: {
   handleOpen: (e: React.MouseEvent<HTMLElement>) => void;
 }) => {
   return (
-    <div className="grid grid-cols-2 gap-15 bg-bg-light pt-32 pb-20 pl-40 pr-40">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 bg-bg-light pt-20 pb-20 px-10">
       <div className="text-black flex justify-center content-center">
         <Image
           height={100}

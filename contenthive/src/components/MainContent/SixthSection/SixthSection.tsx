@@ -7,12 +7,12 @@ const SixthSection = (props: {
   handleOpen: (e: React.MouseEvent<HTMLElement>) => void;
 }) => {
   return (
-    <div className="grid grid-cols-4 gap-5 pt-40 pb-20 pl-20 pr-20">
-      <div className="text-black flex justify-center col-start-2 content-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-16 md:pt-32 pb-20 px-10 sm:pt-20">
+      <div className="text-black flex justify-center content-center">
         <Image height={100} width={250} src={"/phone.png"} alt={"phone"} />
       </div>
 
-      <div className="text-black flex justify-center flex-col col-span-1">
+      <div className="text-black flex justify-center flex-col col-span-1 pt-10 md:pt-0">
         <h2 className="text-left text-orange text-sm">05. RESPONSIVE DESIGN</h2>
         <h2 className="pt-5 text-left text-black text-5xl">
           Manage Your Hive Easily

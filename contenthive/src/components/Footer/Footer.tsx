@@ -8,9 +8,9 @@ import Divider from "@mui/material/Divider";
 
 const Footer = () => {
   return (
-    <div className="bg-orange p-40 pb-0">
-      <div className="grid grid-cols-3 gap-y-10 auto-rows-max pb-10">
-        <div className="col-span-2 text-7xl">
+    <div className="bg-orange p-10 sm:p-20 md:p-40 pb-0">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 auto-rows-max pb-10">
+        <div className="col-span-2 text-6xl lg:text-7xl">
           <h4>
             Have a question? <br />
             Contact us.

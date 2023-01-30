@@ -3,7 +3,7 @@ import React from "react";
 
 const Card = (props: { title: string; content: string; icon: string }) => {
   return (
-    <div className="block rounded-lg shadow-xl bg-white max-w-sm text-center m-10 w-screen h-60">
+    <div className="block rounded-lg shadow-xl bg-white max-w-xs text-center mt-3 lg:mt-10 m-10 w-screen h-60">
       <div className="p-6 ">
         <Image height={80} width={80} src={props.icon} alt={"icon"} />
         <h5 className="text-black text-left text-3xl mb-2 font-bold pt-5">

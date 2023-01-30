@@ -5,7 +5,7 @@ import IconText from "../ThirdSection/IconText";
 
 const FourthSection = () => {
   return (
-    <div className="flex flex-col justify-center pt-32 pb-20 pl-80 pr-80">
+    <div className="flex flex-col content-center justify-center items-center py-20 px-5 md:px-20 xl:px-60">
       <h2 className="text-center text-orange text-sm pb-5">04. BENEFITS</h2>
       <h3 className="text-center text-gray text-6xl">
         Everything is Super Easy
@@ -20,7 +20,7 @@ const FourthSection = () => {
         alt={"demo-image"}
         className="mt-20 rounded-xl drop-shadow-xl"
       />
-      <div className="text-black grid grid-cols-4 gap-15 gap-x-10 content-center pt-16">
+      <div className="text-black grid grid-cols-2 md:grid-cols-4 gap-16 gap-x-10 pt-16">
         <IconText
           title="10+"
           icon="/widgets.svg"

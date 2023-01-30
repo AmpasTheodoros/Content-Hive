@@ -30,8 +30,10 @@ const MainContent = () => {
   return (
     <div className="w-screen mt-20">
       <div className="h-90vh flex flex-col items-center justify-center bg-hero-pattern bg-no-repeat bg-center bg-90vh">
-        <h1 className="text-black text-4vw font-extrabold">BEE DIFFERENT</h1>
-        <p className="text-gray text-lg">
+        <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-extrabold">
+          BEE DIFFERENT
+        </h1>
+        <p className="text-gray text-sm md:text-lg lg:text-xl">
           Make your website the hive of activity it deserves to be
         </p>
 

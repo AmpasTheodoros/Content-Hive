@@ -8,10 +8,8 @@ const Navbar = (props: {
   handleOpen: (e: React.MouseEvent<HTMLElement>) => void;
 }) => {
   return (
-    <nav
-      className={`fixed top-0 left-0 w-screen h-20 justify-between flex flex-row items-center bg-white z-10`}
-    >
-      <div className={`flex items-center content-center ml-10`}>
+    <nav className="fixed top-0 left-0 w-screen h-20 justify-between flex flex-row items-center bg-white z-10">
+      <div className="flex items-center content-center ml-10">
         <Image src="/Logo.png" width={267} height={57} alt="Logo" />
       </div>
       <div className="mr-10">

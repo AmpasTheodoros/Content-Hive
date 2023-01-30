@@ -13,11 +13,11 @@ const IconText = (props: {
   }
   return (
     <div className={type}>
-      <div className="">
+      <div>
         <Image height={60} width={60} src={props.icon} alt={"icon"} />
       </div>
-      <div className="">
-        <h5 className="text-black text-left text-2xl mb- font-bold">
+      <div>
+        <h5 className="text-black text-left text-2xl font-bold">
           {props.title}
         </h5>
         <p className="text-gray-light text-left text-base font-sans mb-4 ">
