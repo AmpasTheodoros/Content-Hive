@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import "animate.css";
 
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
@@ -14,10 +14,8 @@ const JoinWaitlist = (props: { open: boolean; close: () => void }) => {
     width: 600,
     borderRadius: "20px",
     boxShadow: 24,
-    pt: 20,
-    pb: 20,
-    pl: 10,
-    pr: 10,
+    py: 20,
+    px: 10,
   };
 
   const CssTextField = styled(TextField)({
@@ -46,7 +44,7 @@ const JoinWaitlist = (props: { open: boolean; close: () => void }) => {
         sx={style}
         className="bg-polygon bg-contain bg-no-repeat bg-center overflow-visible"
       >
-        <h2 className="text-black text-center text-5xl pb-10 ">
+        <h2 className="text-black text-center text-5xl pb-10">
           Join The Waitlist
         </h2>
         <CssTextField
@@ -55,9 +53,9 @@ const JoinWaitlist = (props: { open: boolean; close: () => void }) => {
           label="Email Address"
           id="fullWidth"
           type="email"
-          className="border-orange"
+          className="border-orange animate__bounceIn"
         />
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center animate__zoomIn">
           <Button
             variant="contained"
             href="/"
@@ -82,9 +80,9 @@ const JoinWaitlist = (props: { open: boolean; close: () => void }) => {
             BUZZ ON
           </Button>
         </div>
-        <p className="text-black text-center text-sm pt-2">
+        {/* <p className="text-black text-center text-sm pt-2">
           *Promise That We Will Not Spam*
-        </p>
+        </p> */}
       </Box>
     </Modal>
   );
